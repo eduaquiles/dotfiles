@@ -1,5 +1,7 @@
 [alias]
 	st = status
+  l = log
+  lg = log --oneline
 [user]
-	email = eduardoaquiles.ar@gmail.com
+	email = eduardoaquiles.ar+git@gmail.com
 	name = Eduardo Aquiles
