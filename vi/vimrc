@@ -1,0 +1,22 @@
+colorscheme evening
+syntax on
+
+" Use filetype detection and file-based automatic indenting.
+filetype plugin indent on
+
+" Use actual tab chars in Makefiles.
+autocmd FileType make set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
+
+" Turn backup off, since most stuff is in SVN, git anyway...
+set nobackup
+set nowb
+set noswapfile
+
+set expandtab "replace tab with space
+set ls=2 	" allways show status line + comand-line
+set tabstop=2 "width of tab
+set number "Show line numbers
+set shiftwidth=2 " width of indent
+set softtabstop=2 " number of columns for tab
+
+map <F3> :NERDTreeToggle<CR>
