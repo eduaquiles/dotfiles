@@ -9,6 +9,19 @@ CURRENT_PATH = File.dirname(__FILE__)
 FILES = ["#{GITCONFIG}", "#{VIMCONFIG}", "#{BASHCONFIG}"].collect{|f| File.join(CURRENT_PATH, f) }
 
 
+def download_lein
+  `curl https://raw.github.com/technomancy/leiningen/stable/bin/lein > lein`
+  `chmod +x lein`
+end
+
+def install_lein
+  puts "Add the file lein to path somewhere"
+end
+
+def patogen
+  `mkdir -p ~/.vim/autoload ~/.vim/bundle; curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim`
+end
+
 def generate_bash_include_verbiage(file)
 <<-eos
 
@@ -46,6 +59,7 @@ def append_bash_configs_to_bashrc
 end
 
 
+patogen
 copy_files_to_home
 append_bash_configs_to_bashrc unless bashrc_contains_include
 
