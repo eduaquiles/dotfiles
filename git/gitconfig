@@ -2,7 +2,7 @@
   st = status
   l = log
   lg = log --oneline
-  co = commit
+  co = checkout
   pr = pull --rebase
   pp = pull -p
 [user]
