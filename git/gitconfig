@@ -1,7 +1,12 @@
 [alias]
-	st = status
+  st = status
   l = log
   lg = log --oneline
+  co = commit
+  pr = pull --rebase
+  pp = pull -p
 [user]
 	email = eduardoaquiles.ar+git@gmail.com
 	name = Eduardo Aquiles
+[core]
+  editor = vim
