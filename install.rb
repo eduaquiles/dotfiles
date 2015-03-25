@@ -19,7 +19,7 @@ def install_lein
 end
 
 def patogen
-  `mkdir -p ~/.vim/autoload ~/.vim/bundle; curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim`
+  `mkdir -p ~/.vim/autoload ~/.vim/bundle; curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim`
 end
 
 def generate_bash_include_verbiage(file)
