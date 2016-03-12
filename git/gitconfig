@@ -5,8 +5,10 @@
   co = checkout
   pr = pull --rebase
   pp = pull -p
+  prom = pull --rebase origin master
+  pu = push -u
 [user]
 	email = eduardoaquiles.ar+git@gmail.com
-	name = Eduardo Aquiles
+	name = Eduardo Aquiles Radanovitsck
 [core]
   editor = vim
