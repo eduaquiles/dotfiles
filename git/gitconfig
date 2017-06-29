@@ -1,7 +1,8 @@
 [alias]
   st = status
   l = log
-  lg = log --oneline
+  lg = log --oneline --abbrev-commit --decorate --all --graph
+  dff = diff --color-words
   co = checkout
   pr = pull --rebase
   pp = pull -p
